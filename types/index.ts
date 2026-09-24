@@ -1,18 +1,33 @@
-export type NavLink = {
+export type QuickLinkItem = {
   title: string;
   href: string;
 };
 
-export type Skill = {
-  id: string;
+export type SchoolInfo = {
   name: string;
-  level?: 'beginner' | 'intermediate' | 'advanced';
+  course: string;
+  description: string;
+  officialSite: string;
+  classeViva: string;
 };
 
-export type ProjectItem = {
-  id: string;
-  title: string;
-  description: string;
-  repo?: string;
-  demo?: string;
+export type SocialLinks = {
+  github: string;
+  linkedin: string;
+};
+
+export type SiteConfig = {
+  name: string;
+  domain: string;
+  url: string;
+  email: string;
+  contactUrl: string;
+  location: string;
+  tagline: string;
+  headline: string;
+  subtitle: string;
+  school: SchoolInfo;
+  focusAreas: readonly string[];
+  socials: SocialLinks;
+  bio: string;
 };
