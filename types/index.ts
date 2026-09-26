@@ -22,6 +22,7 @@ export type SiteConfig = {
   url: string;
   email: string;
   contactUrl: string;
+  gmailUrl: string;
   location: string;
   tagline: string;
   headline: string;

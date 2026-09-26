@@ -1,5 +1,5 @@
 import { SITE } from "../config/site";
-import { Mail } from "lucide-react";
+import ContactEmailActions from "./ContactEmailActions";
 
 function GithubIcon() {
   return (
@@ -48,15 +48,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-3">
-          <a
-            href={SITE.contactUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-zinc-100 px-5 py-2.5 text-sm font-medium text-zinc-950 shadow-sm transition-all duration-200 hover:bg-white hover:shadow-md hover:shadow-zinc-100/10 active:scale-[0.98]"
-          >
-            <Mail className="h-4 w-4" />
-            <span>Contattami</span>
-          </a>
+          <ContactEmailActions />
 
           <a
             href={SITE.socials.github}
